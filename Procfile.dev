@@ -1,2 +1,4 @@
 web: bin/rails server
+cable: bundle exec puma -p $PORT cable/config.ru
+jobs: bin/jobs
 css: bin/rails tailwindcss:watch
