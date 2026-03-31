@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "service-worker.js", to: proc { [204, {"Content-Type" => "application/javascript"}, [""]] }
+  get "/.well-known/appspecific/com.chrome.devtools.json", to: proc { [204, {"Content-Type" => "application/json"}, [""]] }
 
   root "home#show"
 end
