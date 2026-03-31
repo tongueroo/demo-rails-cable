@@ -10,9 +10,9 @@
 #     schedule: at 5am every day
 
 development:
-  heartbeat_broadcast:
-    class: HeartbeatBroadcastJob
-    schedule: every 3 seconds
+  # heartbeat_broadcast:
+  #   class: HeartbeatBroadcastJob
+  #   schedule: every 3 seconds
 
 production:
   heartbeat_broadcast:

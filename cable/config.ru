@@ -2,4 +2,6 @@
 
 require_relative "../config/environment"
 
-run ActionCable.server
+map "/cable" do
+  run ActionCable.server
+end

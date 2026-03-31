@@ -3,6 +3,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-export PORT="${PORT:-3120}"
+# Match Foreman's second-process port when web uses 3000.
+export PORT="${PORT:-3100}"
 
 exec bundle exec puma -p "$PORT" cable/config.ru

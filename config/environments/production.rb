@@ -37,6 +37,7 @@ Rails.application.configure do
   config.log_tags = [ :request_id ]
   config.logger   = ActiveSupport::TaggedLogging.logger(STDOUT)
   config.action_cable.mount_path = nil
+  config.action_cable.disable_request_forgery_protection = true
 
   # Change to "debug" to log everything (including potentially personally-identifiable information!).
   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
