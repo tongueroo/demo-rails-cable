@@ -1,0 +1,25 @@
+<div id="heartbeat_card" class="space-y-5">
+  <div class="flex items-center justify-between">
+    <div>
+      <p class="text-sm font-medium text-slate-500">Live messages received</p>
+      <p class="text-6xl font-black tracking-tight text-slate-900"><%= heartbeat[:count] %></p>
+    </div>
+    <div class="rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+      WebSocket connected
+    </div>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    <div class="rounded-2xl bg-slate-50 p-5">
+      <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Last Broadcast</p>
+      <p class="mt-2 text-xl font-semibold text-slate-900"><%= heartbeat[:timestamp].strftime("%Y-%m-%d %H:%M:%S UTC") %></p>
+    </div>
+
+    <div class="rounded-2xl bg-sky-50 p-5">
+      <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">What This Proves</p>
+      <p class="mt-2 text-slate-700">
+        The page is receiving Turbo Stream updates from a standalone Action Cable server.
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+export PORT="${PORT:-3120}"
+
+exec bundle exec puma -p "$PORT" cable/config.ru
