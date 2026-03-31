@@ -15,6 +15,7 @@
   <div class="rounded-2xl bg-slate-950 px-6 py-5 text-sm text-slate-100">
     <p class="font-semibold text-emerald-300">Procfile</p>
     <pre class="mt-3 overflow-x-auto"><code>web: bin/rails server -p $PORT
-cable: bundle exec puma -p $PORT cable/config.ru</code></pre>
+cable: bin/cable
+jobs: bin/jobs</code></pre>
   </div>
 </div>
