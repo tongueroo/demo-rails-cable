@@ -1,4 +1,3 @@
 web: bin/rails server -p $PORT
 cable: bin/cable
-# jobs: bin/jobs
-jobs: sleep infinity
+jobs: bin/jobs
