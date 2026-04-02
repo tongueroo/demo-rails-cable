@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+export PORT="${PORT:-3000}"
+
+echo "Starting web server on port $PORT"
+exec bin/rails server -p $PORT

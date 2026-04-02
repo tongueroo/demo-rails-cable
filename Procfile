@@ -1,4 +1,4 @@
 release: bundle exec rails db:prepare
-web: bin/rails server -p $PORT
+web: bin/web
 cable: bin/cable
 jobs: bin/jobs

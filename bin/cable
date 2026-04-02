@@ -6,4 +6,5 @@ cd "$(dirname "$0")/.."
 # Match Foreman's second-process port when web uses 3000.
 export PORT="${PORT:-3100}"
 
+echo "Starting cable server on port $PORT"
 exec bundle exec puma -p "$PORT" cable/config.ru
