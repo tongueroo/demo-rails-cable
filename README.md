@@ -7,6 +7,7 @@ It demonstrates:
 - `web` serves normal HTTP traffic
 - `cable` serves WebSocket traffic at `/cable`
 - `jobs` runs Solid Queue jobs and recurring work
+- `release` runs `rails db:prepare` so first deploy bootstraps the databases safely
 
 ## Run
 
