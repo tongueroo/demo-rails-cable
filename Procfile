@@ -1,4 +1,4 @@
 release: bundle exec rails db:prepare
-web: bin/web
+web: sleep infinity
 cable: bin/cable
 jobs: bin/jobs
