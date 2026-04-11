@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Error on purpose"
-exit 1
-
 require_relative "../config/environment"
 require "solid_queue/cli"
 
